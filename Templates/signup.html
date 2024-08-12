@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<style>
+    .signup {
+        color: #eee;
+    }
+
+    .signup label,
+    .signup input[type='text'],
+    .signup input[type='password'],
+    .signup input[type='submit'] {
+        border-radius: 0.25rem;
+        padding: 16px;
+        padding: 1rem;
+    }
+
+    .signup label {
+        background-color: #363b41;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        padding-left: 20px;
+        padding-left: 1.25rem;
+        padding-right: 20px;
+        padding-right: 1.25rem;
+    }
+
+    .signup input[type='password'],
+    .signup input[type='text'] {
+        background-color: #3b4148;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .signup input[type='password']:focus,
+    .signup input[type='password']:hover,
+    .signup input[type='text']:focus,
+    .signup input[type='text']:hover {
+        background-color: #434a52;
+    }
+
+    .signup input[type='submit'] {
+        background-color: #ea4c88;
+        color: #eee;
+        font-weight: 700;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .signup input[type='submit']:focus,
+    .signup input[type='submit']:hover {
+        background-color: #d44179;
+    }
+</style>
+<body class="align">
+  <div class="grid">
+    <!-- <form action="{{ url_for('signup') }}" method="POST" class="form signup"> -->
+        <p class="text--center">Not a member? <a href="/Templates/signup.html">Sign up now</a>
+            <svg class="icon">
+              <use xlink:href="#arrow-right"></use>
+            </svg>
+          </p>
+      <div class="form__field">
+        <label for="signup__username"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use></svg><span class="hidden">Username</span></label>
+        <input id="signup__username" type="text" name="username" class="form__input" placeholder="Username" required>
+      </div>
+      <div class="form__field">
+        <label for="signup__password"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use></svg><span class="hidden">Password</span></label>
+        <input id="signup__password" type="password" name="password" class="form__input" placeholder="Password" required>
+      </div>
+      <div class="form__field">
+        <input type="submit" value="Sign Up">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

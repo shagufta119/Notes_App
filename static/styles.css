@@ -1,0 +1,343 @@
+/* /* .align {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.grid {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px;
+    max-width: 20rem;
+    width: 90%;
+}
+
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.icons {
+    display: none;
+}
+
+.icon {
+    display: inline-block;
+    fill: #606468;
+    font-size: 16px;
+    height: 1em;
+    vertical-align: middle;
+    width: 1em;
+}
+
+* {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #2c3338;
+    color: #606468;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 100%;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100vh;
+}
+
+a {
+    color: #eee;
+    outline: 0;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: underline;
+}
+
+input {
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+
+input[type='submit'] {
+    cursor: pointer;
+}
+
+.form {
+    margin: -14px;
+    margin: -0.875rem;
+}
+
+.form input[type='password'],
+.form input[type='text'],
+.form input[type='submit'] {
+    width: 100%;
+}
+
+.form__field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 14px;
+    margin: 0.875rem;
+}
+
+.form__input {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-radius: 0.25rem;
+    padding: 16px;
+    padding: 1rem;
+    background-color: #3b4148;
+}
+
+.login__submit {
+    background-color: #ea4c88;
+    color: #eee;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    padding: 16px;
+    padding: 1rem;
+    margin: 14px;
+    margin: 0.875rem;
+}
+
+.login__submit:focus,
+.login__submit:hover {
+    background-color: #d44179;
+}
+
+p {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    margin-top: 24px;
+    margin-top: 1.5rem;
+}
+
+.text--center {
+    text-align: center;
+} */
+
+.align {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 320px;
+    width: 90%;
+}
+
+.hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.icons {
+    display: none;
+}
+
+.icon {
+    display: inline-block;
+    fill: #606468;
+    font-size: 16px;
+    height: 1em;
+    vertical-align: middle;
+    width: 1em;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #2c3338;
+    color: #606468;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 100%;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100vh;
+}
+
+a {
+    color: #eee;
+    outline: 0;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: underline;
+}
+
+input, textarea {
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    background-color: #3b4148;
+    border-radius: 0.25rem;
+    padding: 16px;
+    resize: vertical;
+}
+
+.form__field {
+    display: flex;
+    margin: 14px;
+}
+
+.form__input {
+    flex: 1;
+    border-radius: 0.25rem;
+    padding: 16px;
+    background-color: #3b4148;
+}
+
+/* Buttons with different colors */
+.action-button {
+    color: #eee;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    padding: 16px;
+    margin: 14px 8px 14px 0;
+    cursor: pointer;
+}
+
+/* Button colors */
+.action-button.add {
+    background-color: #28a745; /* Green */
+}
+
+.action-button.add:hover {
+    background-color: #218838;
+}
+
+.action-button.update {
+    background-color: #ffc107; /* Yellow */
+}
+
+.action-button.update:hover {
+    background-color: #e0a800;
+}
+
+.action-button.delete {
+    background-color: #dc3545; /* Red */
+}
+
+.action-button.delete:hover {
+    background-color: #c82333;
+}
+
+p {
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.text--center {
+    text-align: center;
+}
+/* General button styles */
+.action-button {
+    color: #eee;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 0.25rem;
+    padding: 16px;
+    margin: 14px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+/* Add button */
+.action-button.add {
+    background-color: #28a745; /* Green */
+}
+
+.action-button.add:hover {
+    background-color: #218838; /* Darker green */
+}
+
+/* Update button */
+.action-button.update {
+    background-color: #ffc107; /* Yellow */
+}
+
+.action-button.update:hover {
+    background-color: #e0a800; /* Darker yellow */
+}
+
+/* Delete button */
+.action-button.delete {
+    background-color: #dc3545; /* Red */
+}
+
+.action-button.delete:hover {
+    background-color: #c82333; /* Darker red */
+}
